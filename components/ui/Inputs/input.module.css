@@ -1,0 +1,3 @@
+.input {
+    @apply mb-5 w-full border border-input bg-transparent pt-2.5 pb-3 px-5 sm:pt-3 sm:pb-3.5 text-sm xl:text-xl text-zinc-700 antialiased placeholder-input placeholder:text-sm xl:placeholder:text-xl placeholder:font-medium placeholder:antialiased focus:border-yellow focus:ring-2 focus:ring-yellow
+}
