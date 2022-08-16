@@ -4,10 +4,21 @@ import Logo from 'components/icons/logo';
 import MenuButton from 'components/icons/menu';
 import Button from 'components/ui/Button';
 import Heading from 'components/ui/Heading';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
-const Header = ({ navItems }) => {
+const Header = ({ navItems, className }) => {
   const [open, setOpen] = useState(false);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  const onScroll = useCallback(() => {
+    setScrolled(window.scrollY > 100);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [onScroll]);
 
   useEffect(() => {
     if (open) {
@@ -19,8 +30,19 @@ const Header = ({ navItems }) => {
   }, [open, setOpen]);
 
   return (
-    <header className="fixed left-0 right-0 mx-auto flex w-full max-w-screen-3xl justify-between overflow-hidden py-5 px-5 sm:px-6 md:py-8 lg:px-8 xl:px-12 2xl:py-11 2xl:px-16 3xl:px-20">
-      <div className="z-[400] w-[84px] md:w-[100px]">
+    <header
+      className={cn(
+        'fixed left-0 right-0 mx-auto flex w-full max-w-screen-3xl justify-between overflow-hidden px-5 transition-all duration-200 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 3xl:px-20',
+        scrolled
+          ? 'border-b-4 border-gray-200 bg-white bg-opacity-80 py-4 backdrop-blur-2xl backdrop-filter 2xl:py-6'
+          : 'py-5 md:py-8 2xl:py-11',
+        className
+      )}>
+      <div
+        className={cn(
+          'z-[400] transition-all duration-200',
+          scrolled ? 'w-16 md:w-[90px]' : 'w-[84px] md:w-[100px]'
+        )}>
         <Logo className="h-full w-full" />
       </div>
       <div className="z-[200] flex items-center space-x-32">

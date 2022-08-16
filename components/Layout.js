@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header navItems={menuitems} />
-      <main className="relative -z-10">{children}</main>
+      <Header className="z-10" navItems={menuitems} />
+      <main className="relative z-0">{children}</main>
       <Footer navItems={menuitems} />
     </>
   );
