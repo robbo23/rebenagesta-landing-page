@@ -1,74 +1,71 @@
 @font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/fonts/futura-pt/FuturaPT-Heavy.eot');
-    src: local('Futura PT Heavy'), local('FuturaPT-Heavy'),
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/fonts/futura-pt/FuturaPT-Heavy.eot');
+  src: local('Futura PT Heavy'), local('FuturaPT-Heavy'),
     url('/fonts/futura-pt/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Heavy.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Heavy.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/FuturaPT-Medium.eot');
-    src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaPT-Medium.eot');
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'),
     url('/fonts/futura-pt/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Medium.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-
 @font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/FuturaPT-Book.eot');
-    src: local('Futura PT Book'), local('FuturaPT-Book'),
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaPT-Book.eot');
+  src: local('Futura PT Book'), local('FuturaPT-Book'),
     url('/fonts/futura-pt/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Book.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Book.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-@font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/FuturaPT-Light.eot');
-    src: local('Futura PT Light'), local('FuturaPT-Light'),
+/* @font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaPT-Light.eot');
+  src: local('Futura PT Light'), local('FuturaPT-Light'),
     url('/fonts/futura-pt/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Light.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+} */
 
 @font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/FuturaPT-Demi.eot');
-    src: local('Futura PT Demi'), local('FuturaPT-Demi'),
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaPT-Demi.eot');
+  src: local('Futura PT Demi'), local('FuturaPT-Demi'),
     url('/fonts/futura-pt/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Demi.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Demi.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
 }
 
-
-
-@font-face {
-    font-family: 'Futura PT';
-    src: url('/fonts/futura-pt/FuturaPT-Bold.eot');
-    src: local('Futura PT Bold'), local('FuturaPT-Bold'),
+/* @font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaPT-Bold.eot');
+  src: local('Futura PT Bold'), local('FuturaPT-Bold'),
     url('/fonts/futura-pt/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
     url('/fonts/futura-pt/FuturaPT-Bold.woff') format('woff'),
     url('/fonts/futura-pt/FuturaPT-Bold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+} */
