@@ -6,7 +6,7 @@ const Section = ({ id, children, className, grey = 'none', yellow = false }) => 
       id={id}
       className={cn(
         'relative w-full pt-8 pb-0 sm:py-20 xl:py-28',
-        'before:absolute before:top-0 before:h-full',
+        'before:absolute before:top-0 before:z-0 before:h-full',
         {
           ['before:left-0 before:w-[61%] before:bg-background sm:before:w-[60%] lg:before:w-[72%]']:
             grey === 'left',

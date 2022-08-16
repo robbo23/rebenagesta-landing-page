@@ -27,7 +27,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Section id="zwieksz-sprzedaz" grey="right" className="!pt-24 md:!pt-16">
+      <Section id="zwieksz-sprzedaz" grey="right" className="!pt-24 md:!pt-40 xl:!pt-16">
         <Grid className="items-center ">
           <div className="order-2 col-2/11 flex flex-wrap items-end lg:order-1 lg:col-1/12 2xl:col-3/11">
             <span className="mt-9 mb-2.5 text-xs font-bold text-gray-300 sm:mt-16 sm:text-base lg:mb-6 lg:text-xl xl:mt-6">
