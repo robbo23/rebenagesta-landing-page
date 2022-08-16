@@ -15,16 +15,10 @@ import Section from 'components/ui/Section';
 import Text from 'components/ui/Text';
 import Head from 'next/head';
 import Image from 'next/image';
-import CaseStudies from 'pages/components/caseStudies';
+import CaseStudies from 'components/CaseStudies';
 import { getCaseStudies } from 'utils/api/case-studies';
 
 export default function Home({ data }) {
-  console.log('base', data);
-  console.log(
-    'data props nested',
-    data.map((item) => item.acf_casestudies?.metaInfo.tagsServices.map((tag) => tag))
-  );
-
   return (
     <div>
       <Head>

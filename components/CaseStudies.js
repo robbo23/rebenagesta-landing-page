@@ -88,9 +88,8 @@ export default function CaseStudies({ cases }) {
                             </h3>
                           </Link>
                           <div className="columns-2">
-                            {caseStudy.acf_casestudies?.metaInfo.tagsServices
-                              .slice(0, 9)
-                              .map((tag) => {
+                            {caseStudy.acf_casestudies?.metaInfo?.tagsServices?.map(
+                              (tag) => {
                                 return (
                                   <Link
                                     href={`https://rebenagesta.com${caseStudy.uri}`}
@@ -104,7 +103,8 @@ export default function CaseStudies({ cases }) {
                                     </p>
                                   </Link>
                                 );
-                              })}
+                              }
+                            )}
                           </div>
                         </div>
                         <Button

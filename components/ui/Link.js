@@ -12,6 +12,7 @@ const Link = ({ href, children, ...props }) => {
   }
 
   return (
+    //eslint-disable-next-line react/jsx-no-target-blank
     <a href={href} {...props} target="_blank">
       {children}
     </a>

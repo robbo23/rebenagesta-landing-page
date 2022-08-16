@@ -6,7 +6,6 @@ const Effect2 = ({ className }) => {
       height="57.667"
       viewBox="0 0 57.054 57.667"
       className={className}>
-      >
       <g id="Group_7" data-name="Group 7" transform="translate(0 0)">
         <path
           id="Path_24"
