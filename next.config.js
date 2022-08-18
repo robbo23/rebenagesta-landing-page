@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  assetPrefix: 'https://rebenagesta-landing-page.vercel.app',
   images: {
     domains: ['rebenagesta.com', 'panel.rebenagesta.com'],
     minimumCacheTTL: 60 * 60 * 24 * 31 * 12, // 1 year cache
