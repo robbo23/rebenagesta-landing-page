@@ -54,6 +54,7 @@ export default function Home({ data }) {
               width={798}
               height={636}
               alt="Zwieksz swoja sprzedaz w biznesie razem z Re Bena Gesta!"
+              priority={true}
               placeholder="blur"
             />
           </div>

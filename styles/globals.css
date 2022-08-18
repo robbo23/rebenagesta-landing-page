@@ -36,3 +36,7 @@ a {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   @apply bg-yellow w-10 2xl:w-16 !important;
 }
+
+.swiper-button-disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
