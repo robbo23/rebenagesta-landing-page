@@ -19,7 +19,6 @@ import Image from 'next/image';
 import { getCaseStudies } from 'utils/api/case-studies';
 
 export default function Home({ data }) {
-  console.log('env ', process.env.NODE_ENV);
   return (
     <div>
       <Head>

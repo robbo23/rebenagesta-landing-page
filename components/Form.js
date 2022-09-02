@@ -17,7 +17,7 @@ const Form = () => {
       message: `${e.target.message.value}\n\n\n Wysłano z Landing Page!`
     };
     // API endpoint where we send form data.
-    const endpoint = '/api/form';
+    const endpoint = 'https://rebenagesta-landing-page.vercel.app/api/form';
 
     // Form the request for sending data to the server.
     const options = {
