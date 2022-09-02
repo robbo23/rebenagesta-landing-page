@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production';
+const isProd = process.env.VERCEL_ENV === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
