@@ -4,9 +4,9 @@ import Link from 'components/ui/Link';
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import { Controller, Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { mapBreakpoints } from 'utils/breakpoints';
 
 export default function CaseStudies({ cases }) {
@@ -46,9 +46,6 @@ export default function CaseStudies({ cases }) {
               spaceBetween={16}
               onResize={(swiper) => {
                 swiper.update();
-              }}
-              swiper={(swiper) => {
-                swiper.resize();
               }}
               breakpoints={mapBreakpoints({
                 xs: {
@@ -93,8 +90,7 @@ export default function CaseStudies({ cases }) {
                                 return (
                                   <Link
                                     href={`https://rebenagesta.com${caseStudy.uri}`}
-                                    key={tag.uri}
-                                    passHref>
+                                    key={tag.uri}>
                                     <p
                                       className="py-0.5 text-sm xl:py-1 xl:text-xl"
                                       key={tag.uri}>

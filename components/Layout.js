@@ -1,11 +1,13 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import LayoutDefaultMeta from 'components/Meta';
 
 const Layout = ({ children }) => {
   const menuitems = getMenuItems();
 
   return (
     <>
+      <LayoutDefaultMeta />
       <Header className="z-10" navItems={menuitems} />
       <main className="relative z-0">{children}</main>
       <Footer navItems={menuitems} />

@@ -44,10 +44,15 @@ const Header = ({ navItems, className }) => {
             'z-[400] transition-all duration-200',
             scrolled ? 'w-16 md:w-[90px]' : 'w-[84px] md:w-[100px]'
           )}>
-          <Logo className="h-full w-full" />
+          <a href="#">
+            <Logo className="h-full w-full" />
+          </a>
         </div>
         <div className="z-[200] flex items-center space-x-32">
-          <Button className="hidden justify-self-end !text-lg lg:flex" type="textlink">
+          <Button
+            className="hidden justify-self-end !text-lg lg:flex"
+            type="textlink"
+            href="https://calendly.com/rebenagesta">
             Bezpłatna konsultacja
           </Button>
           <button onClick={() => setOpen(!open)}>

@@ -10,6 +10,8 @@ export async function graphqlQuery(query, { variables } = {}) {
     })
   });
 
+
+
   const json = await res.json();
 
   if (json.errors) {

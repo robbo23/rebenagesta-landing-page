@@ -1,5 +1,4 @@
 import reviewsImage from 'assets/reviews.png';
-import cn from 'clsx';
 import PaginationArrow from 'components/icons/pagination-arrow';
 import Grid from 'components/ui/Grid';
 import Heading from 'components/ui/Heading';
@@ -11,7 +10,7 @@ import { Pagination, Navigation, Controller } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default function Reviews({ children }) {
+export default function Reviews() {
   const prevRef = useRef();
   const nextRef = useRef();
   const reviews = getReviews();

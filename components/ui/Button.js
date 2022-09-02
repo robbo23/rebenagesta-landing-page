@@ -1,7 +1,6 @@
 import cn from 'clsx';
 import ChevronRight from 'components/icons/chevron-right';
 import Link from 'components/ui/Link';
-import { useState } from 'react';
 
 const Button = ({
   href,
@@ -9,10 +8,9 @@ const Button = ({
   color = 'black',
   className,
   children,
+  loading,
   ...props
 }) => {
-  const [loading, setLoading] = useState(false);
-
   const Loader = () => {
     return (
       <svg
@@ -73,7 +71,8 @@ const Button = ({
       disabled={loading}
       className={cn(style, loading && '!bg-gray-400 !text-gray-600')}
       {...props}
-      onClick={() => setLoading(!loading)}>
+      //onClick={() => setLoading(!loading)}>
+    >
       {loading && <Loader />}
       {children}
     </button>

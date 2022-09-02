@@ -1,20 +1,20 @@
 import cn from 'clsx';
-import Process1 from 'components/icons/process-1';
-import Process2 from 'components/icons/process-2';
-import Process3 from 'components/icons/process-3';
-import Process4 from 'components/icons/process-4';
-import Process5 from 'components/icons/process-5';
-import Process6 from 'components/icons/process-6';
-import Process7 from 'components/icons/process-7';
-import Process8 from 'components/icons/process-8';
-import Process9 from 'components/icons/process-9';
-import Process10 from 'components/icons/process-10';
-import Process11 from 'components/icons/process-11';
-import Process12 from 'components/icons/process-12';
+import Process1 from 'components/icons/process/process-1';
+import Process10 from 'components/icons/process/process-10';
+import Process11 from 'components/icons/process/process-11';
+import Process12 from 'components/icons/process/process-12';
+import Process2 from 'components/icons/process/process-2';
+import Process3 from 'components/icons/process/process-3';
+import Process4 from 'components/icons/process/process-4';
+import Process5 from 'components/icons/process/process-5';
+import Process6 from 'components/icons/process/process-6';
+import Process7 from 'components/icons/process/process-7';
+import Process8 from 'components/icons/process/process-8';
+import Process9 from 'components/icons/process/process-9';
 import Text from 'components/ui/Text';
 import s from './process.module.css';
 
-const Process = ({ className, ...props }) => {
+const Process = () => {
   const process = getProcessCards();
   return (
     <div className={cn('sm:mt-16 sm:grid 3xl:pb-32', s.grid)}>
@@ -80,56 +80,54 @@ function getProcessCards() {
   return [
     {
       icon: <Process1 />,
-      description:
-        'Poprosimy, abyś wypełnić brief, abyśmy mogli poznać Twoje potrzeby, aby porozmawiać o konkretach.'
+      description: 'Pierwszy kontakt - mail, telefon lub konsultacja online'
     },
     {
       icon: <Process2 />,
-      description: 'Analiza - dobieramy produkt dla Ciebie'
+      description: 'Wypełnisz brief, abyśmy mogli lepiej poznać Twoje potrzeby'
     },
     {
       icon: <Process3 />,
-      description:
-        'Oferta - przygotowujemy optymalne rozwiązania, aby wspierać sprzedaż Twoich produków w internecie'
+      description: 'Przeprowadzimy analizę i wybierzemy rozwiązanie dla Ciebie\n'
     },
 
     {
       icon: <Process4 />,
-      description:
-        'Omówienie - rozmawiamy, aby przedstawić propozycję działań i upewnić się, że dobrze zrozumieliśmy Twoje oczekiwania'
+      description: 'Przygotujemy kompleksową ofertę dla Ciebie'
     },
 
     {
       icon: <Process5 />,
-      description: 'Tworzymy makiety, a następnie widoki graficzne i koncepcje treści'
+      description:
+        'Umówimy się na omówienie, żeby upewnić się, że dobrze zrozumieliśmy Twoje oczekiwania'
     },
     {
       icon: <Process6 />,
-      description: `Wdrażamy audyt lub projektujemy od zera`
+      description: `Podpiszemy umowę na wdrożenie i`
     },
     {
       icon: <Process7 />,
-      description: `Przeprowadzamy audyt i przygotowujemy strategię wraz z timeline projektu`
+      description: `Optymalizujemy witrynę lub podejmujemy się kompleksowego procesu projektowego`
     },
     {
       icon: <Process8 />,
-      description: `Podpisujemy umowę - na czas nieokreślony -  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.`
+      description: `Wdrażamy zalecenia lub rozpoczynamy projektowanie ux oraz tworzenie treści`
     },
     {
       icon: <Process9 />,
-      description: `Kodujemy lub optymalizujemy pod kątem SEO i konwersji`
+      description: `Kodujemy i wdrażamy, a następnie optymalizujemy projekt`
     },
     {
       icon: <Process10 />,
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.`
+      description: `Po wdrożeniu lub optymalizacji rozpoczynamy działania marketingowe`
     },
     {
       icon: <Process11 />,
-      description: `Rozpoczynamy działania marketingowe`
+      description: `Otrzymujesz regularne raporty z analityką i obszernymi komentarzami`
     },
     {
       icon: <Process12 />,
-      description: `Otrzymujesz raporty i Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore`
+      description: `Jesteśmy do Twojej dyspozycji - telefonicznie, mailowo i na żywo`
     }
   ];
 }
