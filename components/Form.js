@@ -23,9 +23,12 @@ const Form = () => {
     const options = {
       // The method is POST because we are sending data.
       method: 'POST',
-      // Tell the server we're sending JSON.
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'https://rebenagesta.com',
+        'Access-Control-Allow-Methods': 'POST GET',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Credentials': 'true'
       },
       // Body of the request is the JSON data we created above.
       body: JSON.stringify(data)
