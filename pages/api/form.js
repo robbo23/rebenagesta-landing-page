@@ -1,6 +1,14 @@
+import NextCors from 'nextjs-cors';
 import { sendEmail } from 'utils/email-server';
 
 export default async function handler(req, res) {
+  await NextCors(req, res, {
+    methods: ['POST'],
+    origin: '*',
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+  });
+
   const { name, email, phone, message } = req.body;
 
   const data = await sendEmail({

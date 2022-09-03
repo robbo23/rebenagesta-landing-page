@@ -22,17 +22,10 @@ const Form = () => {
     // Form the request for sending data to the server.
 
     const response = await fetch(endpoint, {
-      mode: 'cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-        'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Max-Age': '60'
-      },
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(data)
     });
 
