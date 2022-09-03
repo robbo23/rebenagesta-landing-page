@@ -1,7 +1,6 @@
 import Button from 'components/ui/Button';
 import Input from 'components/ui/Inputs/Input';
 import Textarea from 'components/ui/Inputs/Textarea';
-import { fetch } from 'next/dist/compiled/@edge-runtime/primitives/fetch';
 import { useState } from 'react';
 
 const Form = () => {
@@ -21,20 +20,21 @@ const Form = () => {
     const endpoint = 'https://rebenagesta-landing-page.vercel.app/api/form';
 
     // Form the request for sending data to the server.
-    const options = {
+
+    const response = await fetch(endpoint, {
       mode: 'cors',
       headers: {
-        'Access-Control-Allow-Origin': 'https://rebenagesta.com',
-        'Access-Control-Allow-Methods': 'POST',
-        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+        'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
         'Content-Type': 'application/json',
-        Connection: 'Keep-Alive'
+        Accept: 'application/json',
+        'Access-Control-Allow-Credentials': 'true',
+        'Access-Control-Max-Age': '60'
       },
       method: 'POST',
       body: JSON.stringify(data)
-    };
-
-    const response = await fetch(endpoint, options);
+    });
 
     if (response.ok) {
       alert(`Wiadomość została wysłana!`);
