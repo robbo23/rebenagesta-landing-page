@@ -1,6 +1,7 @@
 import Button from 'components/ui/Button';
 import Input from 'components/ui/Inputs/Input';
 import Textarea from 'components/ui/Inputs/Textarea';
+import { fetch } from 'next/dist/compiled/@edge-runtime/primitives/fetch';
 import { useState } from 'react';
 
 const Form = () => {
@@ -21,6 +22,7 @@ const Form = () => {
 
     // Form the request for sending data to the server.
     const options = {
+      mode: 'cors',
       headers: {
         'Access-Control-Allow-Origin': 'https://rebenagesta.com',
         'Access-Control-Allow-Methods': 'POST',
