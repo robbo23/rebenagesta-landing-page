@@ -31,19 +31,19 @@ const nextConfig = {
           }
         ]
       },
-      {
-        source: '/:all*(ttf|otf|woff|woff2|svg|png|jpg|mp4|css|js)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable'
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains; preload'
-          }
-        ]
-      }
+      //{
+      //  source: '/:all*(ttf|otf|woff|woff2|svg|png|jpg|mp4|css|js)',
+      //  headers: [
+      //    {
+      //      key: 'Cache-Control',
+      //      value: 'public, max-age=31536000, immutable'
+      //    },
+      //    {
+      //      key: 'Strict-Transport-Security',
+      //      value: 'max-age=31536000; includeSubDomains; preload'
+      //    }
+      //  ]
+      //}
     ];
   }
 };
