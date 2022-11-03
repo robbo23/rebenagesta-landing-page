@@ -1,6 +1,6 @@
 // noinspection HtmlRequiredTitleElement
 
-import { Partytown } from '@builder.io/partytown/react';
+// import { Partytown } from '@builder.io/partytown/react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 
@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="pl">
         <Head>
+  /**    
           <Partytown
             //debug={true}
             forward={['dataLayer.push', 'fbq']}
@@ -28,6 +29,9 @@ class MyDocument extends Document {
               return url;
             }}
           />
+  */
+      
+  
           <Script
             id="gtm-script"
             strategy="worker"
