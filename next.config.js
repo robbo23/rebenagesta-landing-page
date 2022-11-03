@@ -10,12 +10,12 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 31 * 12, // 1 year cache
     formats: ['image/avif', 'image/webp']
   },
-  
+
   /**
-  experimental: {
+   experimental: {
    nextScriptWorkers: true
   },
-  */
+   */
   async headers() {
     return [
       {
@@ -28,6 +28,19 @@ const nextConfig = {
           {
             key: 'Cross-Origin-Opener-Policy',
             value: 'same-origin'
+          }
+        ]
+      },
+      {
+        source: '/:all*(ttf|otf|woff|woff2|svg|png|jpg|mp4|css|js)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload'
           }
         ]
       }

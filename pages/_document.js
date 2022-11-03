@@ -11,11 +11,11 @@ class MyDocument extends Document {
     return (
       <Html lang="pl">
         <Head>
-  /**    
-          <Partytown
-            //debug={true}
-            forward={['dataLayer.push', 'fbq']}
-            resolveUrl={function (url, location, type) {
+          {/**
+           <Partytown
+           //debug={true}
+           forward={['dataLayer.push', 'fbq']}
+           resolveUrl={function (url, location, type) {
               if (type === 'script') {
                 const proxyUrl = new URL('https://cdn.builder.codes/api/v1/js-proxy');
                 proxyUrl.searchParams.append('url', url.href);
@@ -28,10 +28,9 @@ class MyDocument extends Document {
 
               return url;
             }}
-          />
-  */
-      
-  
+           />
+           */}
+
           <Script
             id="gtm-script"
             strategy="afterInteractive"

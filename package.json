@@ -10,7 +10,6 @@
     "partytown": "partytown copylib public/~partytown"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.7.0",
     "clsx": "^1.2.1",
     "next": "^12.2.5",
     "nextjs-cors": "^2.1.1",
