@@ -10,9 +10,12 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 31 * 12, // 1 year cache
     formats: ['image/avif', 'image/webp']
   },
+  
+  /**
   experimental: {
-    nextScriptWorkers: true
+   nextScriptWorkers: true
   },
+  */
   async headers() {
     return [
       {
